@@ -3,10 +3,55 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Bienes Raíces</title>
+    <!-- TailwindCSS -->
     <link rel="stylesheet" href="output.css">
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="../node_modules/bootstrap-icons/font/bootstrap-icons.css">
 </head>
-<body>
-    <h1 class="bg-red-300">Hola Mundo</h1>
+<body class="bg-gray-100">
+    <!-- Header -->
+    <header class="relative">
+        <!-- Imagen de fondo -->
+        <img src="img/header.jpg" alt="Imagen de fondo" class="w-full h-[750px] object-cover">
+        <!-- Navegación -->
+        <nav class="flex justify-between mx-auto inset-0 p-6 absolute">
+                <!-- Logo -->
+                <div class="h-16 flex items-center">
+                    <a href="#">
+                        <img class="w-80 mx-10" src="img/logo.svg" alt="Logo de la página">
+                    </a>
+                </div>
+                <!-- Menú -->
+                <div class="h-16 flex items-center">
+                    <ul class="flex mx-10 space-x-8 justify-end">
+                        <li class="text-white text-2xl hover:text-blue-200">
+                            <a href="nosotros.html">Nosotros</a>
+                        </li>
+                        <li class="text-white text-2xl hover:text-blue-200">
+                            <a href="anuncios.html">Anuncios</a>
+                        </li>
+                        <li class="text-white text-2xl hover:text-blue-200">
+                            <a href="contacto.html">Contacto</a>
+                        </li>
+                        <li>
+                            <button class="bi bi-moon-fill text-white text-2xl hover:text-black"></button>
+                        </li>
+                    </ul>
+                </div>
+        </nav>
+
+        <!-- Presentación -->
+        <div class="absolute inset-0 flex flex-col items-center justify-center">
+            <h1 class="text-4xl font-extrabold leading-none tracking-tight text-gray-900 md:text-5xl lg:text-6xl dark:text-white">¡Encuentra tu próximo hogar!</h1>
+            <p class="mb-6 mt-6 text-lg text-center font-normal text-gray-500 lg:text-xl sm:px-16 xl:px-48 dark:text-gray-400">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur sequi a dolores recusandae aliquid facilis corrupti, dolor laudantium aut, dignissimos odit qui quos magni officia, fugiat voluptates voluptatum unde saepe?</p>
+            <a href="anuncios.html" class="inline-flex items-center justify-center px-5 py-3 text-base font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 dark:focus:ring-blue-900">
+                <span class="bi bi-arrow-right mr-2"></span> 
+                Ir a anuncios   
+            </a>
+        </div>
+
+    </header>
+
 </body>
 </html>
