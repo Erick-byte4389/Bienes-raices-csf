@@ -15,7 +15,7 @@
         <!-- Imagen de fondo -->
         <img src="img/header.jpg" alt="Imagen de fondo" class="w-full h-[750px] object-cover">
         <!-- Navegación -->
-        <nav class="flex justify-between mx-auto inset-0 p-6 absolute">
+        <nav id="navbar" class="flex justify-between mx-auto inset-0 p-6 absolute">
                 <!-- Logo -->
                 <div class="h-16 flex items-center">
                     <a href="#">
@@ -26,12 +26,12 @@
                 <div class="h-16 flex items-center">
                     <ul class="flex mx-10 space-x-8 justify-end">
                         <li class="text-white text-2xl">
-                            <a class="hover:text-blue-200" href="nosotros.html">Nosotros</a>
+                            <a class="hover:underline" href="nosotros.html">Nosotros</a>
                         </li>
-                        <li class="text-white text-2xl hover:text-blue-200">
+                        <li class="text-white text-2xl hover:underline">
                             <a href="anuncios.html">Anuncios</a>
                         </li>
-                        <li class="text-white text-2xl hover:text-blue-200">
+                        <li class="text-white text-2xl hover:underline">
                             <a href="contacto.html">Contacto</a>
                         </li>
                         <li>
@@ -42,7 +42,7 @@
         </nav>
 
         <!-- Presentación -->
-        <div class="absolute inset-0 flex flex-col items-center justify-center">
+        <div class="absolute inset-0 flex flex-col items-center justify-center mt-20">
             <h1 class="text-4xl font-extrabold leading-none tracking-tight text-gray-900 md:text-5xl lg:text-6xl dark:text-white">¡Encuentra tu próximo hogar!</h1>
             <p class="mb-12 mt-12 text-lg text-center font-normal text-gray-500 lg:text-xl sm:px-16 xl:px-48 dark:text-gray-400">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur sequi a dolores recusandae aliquid facilis corrupti, dolor laudantium aut, dignissimos odit qui quos magni officia, fugiat voluptates voluptatum unde saepe?</p>
             <a href="anuncios.html" class="inline-flex items-center justify-center px-5 py-3 text-base font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 dark:focus:ring-blue-900">
@@ -247,7 +247,7 @@
       </section>
 
     <!-- Compramos tu casa -->
-     <section class="relative pt-8">
+     <section class="relative pt-8 mb-12">
         <img src="img/encuentra.jpg" alt="Imagen de fondo" class="w-full h-fit object-cover">
 
         <div class="absolute inset-0 flex flex-col items-center justify-center">
@@ -260,5 +260,38 @@
         </div>
      </section>
 
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-6">
+        <div class="container mx-auto px-4">
+            <div class="flex flex-col md:flex-row justify-between items-center">
+                <!-- Logo -->
+                <a href="index.html" class="mb-4 md:mb-0">
+                    <img src="img/logo.svg" alt="Logo" class="h-10">
+                </a>
+                <!-- Enlaces -->
+                <ul class="flex flex-col md:flex-row items-center space-y-4 md:space-y-0 md:space-x-8 text-sm font-medium">
+                    <li>
+                        <a href="nosotros.html" class="hover:underline">Nosotros</a>
+                    </li>
+                    <li>
+                        <a href="anuncios.html" class="hover:underline">Anuncios</a>
+                    </li>
+                    <li>
+                        <a href="contacto.html" class="hover:underline">Contacto</a>
+                    </li>
+                </ul>
+            </div>
+            <hr class="my-6 border-gray-200 sm:mx-auto dark:border-gray-700 lg:my-8" />
+            <!-- Copyright -->
+            <div class="flex justify-center">
+                <span class="text-sm text-white text-center">
+                    &copy; <span id="currentYear"></span> <a href="index.html" class="hover:underline">Bienes</a>. Todos los derechos reservados
+                </span>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Script -->
+     <script src="script.js "></script>
 </body>
 </html>
