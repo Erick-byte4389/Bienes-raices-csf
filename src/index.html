@@ -9,13 +9,13 @@
     <!-- Bootstrap Icons -->
      <link rel="stylesheet" href="/node_modules/bootstrap-icons/font/bootstrap-icons.css">
 </head>
-<body class="bg-gray-100">
+<body class="bg-gray-100 dark:bg-slate-900">
     <!-- Header -->
     <header class="relative">
         <!-- Imagen de fondo -->
         <img src="img/header.jpg" alt="Imagen de fondo" class="w-full h-[750px] object-cover">
         <!-- Navegación -->
-        <nav id="navbar" class="flex justify-between mx-auto inset-0 p-6 absolute">
+        <nav class="flex justify-between mx-auto inset-0 p-6 absolute">
                 <!-- Logo -->
                 <div class="h-16 flex items-center">
                     <a href="#">
@@ -35,7 +35,7 @@
                             <a href="contacto.html">Contacto</a>
                         </li>
                         <li>
-                            <button class="bi bi-moon-fill text-white text-2xl hover:text-black"></button>
+                            <button id="darkmode" class="bi bi-moon-fill text-white text-2xl hover:text-black"></button>
                         </li>
                     </ul>
                 </div>
@@ -43,9 +43,9 @@
 
         <!-- Presentación -->
         <div class="absolute inset-0 flex flex-col items-center justify-center mt-20">
-            <h1 class="text-4xl font-extrabold leading-none tracking-tight text-gray-900 md:text-5xl lg:text-6xl dark:text-white">¡Encuentra tu próximo hogar!</h1>
-            <p class="mb-12 mt-12 text-lg text-center font-normal text-gray-500 lg:text-xl sm:px-16 xl:px-48 dark:text-gray-400">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur sequi a dolores recusandae aliquid facilis corrupti, dolor laudantium aut, dignissimos odit qui quos magni officia, fugiat voluptates voluptatum unde saepe?</p>
-            <a href="anuncios.html" class="inline-flex items-center justify-center px-5 py-3 text-base font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 dark:focus:ring-blue-900">
+            <h1 class="text-4xl font-extrabold leading-none tracking-tight text-white md:text-3xl lg:text-6xl">¡Encuentra tu próximo hogar!</h1>
+            <p class="mb-12 mt-12 text-lg text-center font-normal text-white opacity-65 lg:text-xl sm:px-16 xl:px-48">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur sequi a dolores recusandae aliquid facilis corrupti, dolor laudantium aut, dignissimos odit qui quos magni officia, fugiat voluptates voluptatum unde saepe?</p>
+            <a href="anuncios.html" class="inline-flex items-center justify-center px-5 py-3 text-base font-medium text-center text-white bg-color-botton rounded-lg hover:bg-orange-300 focus:ring-4">
                 <span class="bi bi-arrow-right mr-2"></span> 
                 Ir a anuncios   
             </a>
@@ -54,15 +54,15 @@
 
     <!-- Sobre nosotros -->
      <section class="pt-8">
-        <h2 class="text-5xl text-left ml-14">Sobre nosotros</h2>
+        <h2 class="text-5xl text-left ml-14  dark:text-white">Sobre nosotros</h2>
 
         <div class="flex flex-wrap gap-4 justify-center mt-4">
 
             <!-- Parrafos -->
             <div class="flex flex-col gap-4 flex-1 mr-40">
-                <p class="text-justify font-normal text-gray-500 ml-14 my-2 block">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Delectus, quasi enim qui odio pariatur nobis rem saepe quibusdam vel optio sapiente facere, cupiditate, nihil ipsam veniam eligendi. Laboriosam, corporis rem? Modi libero odit voluptate vel distinctio officiis atque quasi labore perspiciatis reiciendis? Voluptatum a blanditiis in provident, dolores tenetur? Atque maxime praesentium deserunt voluptatibus consectetur id voluptatum est cumque facere.</p>
-                <p class="text-justify font-normal text-gray-500 ml-14 my-2 block">Modi libero odit voluptate vel distinctio officiis atque quasi labore perspiciatis reiciendis? Voluptatum a blanditiis in provident, dolores tenetur? Atque maxime praesentium deserunt voluptatibus consectetur id voluptatum est cumque facere. Ipsa iste soluta neque dolorum? Soluta dolore molestias officia vero beatae aut quisquam non repudiandae voluptates nobis ea, quo optio harum id maxime qui laboriosam illum ipsa rem animi nemo!</p>
-                <p class="text-justify font-normal text-gray-500 ml-14 my-2 block">Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui, illo.</p>
+                <p class="text-justify font-normal text-gray-800 ml-14 my-2 block dark:text-white opacity-65">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Delectus, quasi enim qui odio pariatur nobis rem saepe quibusdam vel optio sapiente facere, cupiditate, nihil ipsam veniam eligendi. Laboriosam, corporis rem? Modi libero odit voluptate vel distinctio officiis atque quasi labore perspiciatis reiciendis? Voluptatum a blanditiis in provident, dolores tenetur? Atque maxime praesentium deserunt voluptatibus consectetur id voluptatum est cumque facere.</p>
+                <p class="text-justify font-normal text-gray-800 ml-14 my-2 block dark:text-white opacity-65">Modi libero odit voluptate vel distinctio officiis atque quasi labore perspiciatis reiciendis? Voluptatum a blanditiis in provident, dolores tenetur? Atque maxime praesentium deserunt voluptatibus consectetur id voluptatum est cumque facere. Ipsa iste soluta neque dolorum? Soluta dolore molestias officia vero beatae aut quisquam non repudiandae voluptates nobis ea, quo optio harum id maxime qui laboriosam illum ipsa rem animi nemo!</p>
+                <p class="text-justify font-normal text-gray-800 ml-14 my-2 block dark:text-white opacity-65">Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui, illo.</p>
             </div>
 
             <!-- Aptitudes -->
@@ -71,36 +71,36 @@
                  <div class="flex flex-col items-center">
                     <!-- Circulo -->
                     <div class="flex items-center justify-center bg-white border border-gray-200 rounded-full w-28 h-28">
-                            <i class="bi bi-lock mt-3 text-6xl text-orange-400 mb-4"></i>
+                            <i class="bi bi-lock mt-3 text-6xl text-orange-400 mb-4 dark:text-color-icono"></i>
                     </div>
-                    <h3 class="mt-3 text-lg font-semibold text-gray-900 tracking-tight text-center">Seguridad</h3>
+                    <h3 class="mt-3 text-lg font-semibold text-gray-900 tracking-tight text-center dark:text-white">Seguridad</h3>
                  </div>
                 
                 <!-- Precio -->
                  <div class="flex flex-col items-center">
                     <!-- Circulo -->
                     <div class="flex items-center justify-center bg-white border border-gray-200 rounded-full w-28 h-28">
-                        <i class="bi bi-cash-stack mt-5 text-6xl text-orange-400 mb-4"></i>
+                        <i class="bi bi-cash-stack mt-5 text-6xl text-orange-400 mb-4 dark:text-color-icono"></i>
                     </div>
-                    <h3 class="mt-3 text-lg font-semibold text-gray-900 tracking-tight text-center">Precio</h3>
+                    <h3 class="mt-3 text-lg font-semibold text-gray-900 tracking-tight text-center dark:text-white">Precio</h3>
                  </div>
     
                 <!-- A tiempo -->
                 <div class="flex flex-col items-center">
                     <!-- Circulo -->
                     <div class="flex items-center justify-center bg-white border border-gray-200 rounded-full w-28 h-28">
-                        <i class="bi bi-alarm mt-4 text-6xl text-orange-400 mb-4"></i>
+                        <i class="bi bi-alarm mt-4 text-6xl text-orange-400 mb-4 dark:text-color-icono"></i>
                     </div>
-                    <h3 class="mt-3 text-lg font-semibold text-gray-900 tracking-tight text-center">A tiempo</h3>
+                    <h3 class="mt-3 text-lg font-semibold text-gray-900 tracking-tight text-center dark:text-white">A tiempo</h3>
                  </div>
     
                 <!-- Cobertura -->
                 <div class="flex flex-col items-center">
                     <!-- Circulo -->
                     <div class="flex items-center justify-center bg-white border border-gray-200 rounded-full w-28 h-28">
-                        <i class="bi bi-geo-alt mt-4 text-6xl text-orange-400 mb-4"></i>
+                        <i class="bi bi-geo-alt mt-4 text-6xl text-orange-400 mb-4 dark:text-color-icono"></i>
                     </div>
-                    <h3 class="mt-3 text-lg font-semibold text-gray-900 tracking-tight text-center">Cobertura</h3>
+                    <h3 class="mt-3 text-lg font-semibold text-gray-900 tracking-tight text-center dark:text-white">Cobertura</h3>
                  </div>
             </div>
 
@@ -109,19 +109,20 @@
 
     <!-- Inmuebles en venta -->
       <section class="pt-8">
-        <h2 class="text-5xl text-left ml-14">Propiedades</h2>
+        <h2 class="text-5xl text-left ml-14 dark:text-white">Propiedades</h2>
 
         <div class="flex flex-wrap gap-4 justify-center mt-8">
             <!-- Anuncio 1 -->
-            <div class="bg-white border border-gray-200 rounded-lg w-80">
+            <div class="bg-white border border-gray-200 rounded-lg w-80 dark:bg-gray-800 dark:border-gray-700">
                 <a href="anuncios.html">
                     <img src="img/anuncio1.jpg" alt="Anuncio 1" class="w-full h-48 object-cover rounded-t-lg">
                 </a>
                 <div class="p-5">
-                    <h3 class="text-2xl mb-2 font-semibold text-gray-900 tracking-tight">Casa en la playa</h3>
-                    <p class="text-gray-500 mb-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque laborum minima nam, ipsum nesciunt culpa temporibus reprehenderit iure aliquam magnam!</p>
+                    <h3 class="text-2xl mb-2 font-semibold text-gray-900 tracking-tight dark:text-white">Casa en la playa</h3>
+                    <p class="text-gray-900 mb-3 dark:dark:text-white opacity-65">Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque laborum minima nam, ipsum nesciunt culpa temporibus reprehenderit iure aliquam magnam!</p>
+                    <!-- Iconos casa -->
                     <div class="flex justify-center items-center">
-                        <ul class="flex flex-row items-center space-x-8">
+                        <ul class="flex flex-row items-center space-x-8 dark:text-white">
                                 <li class="flex items-center space-x-1 flex-1">
                                 <i class="bi bi-car-front-fill"></i>
                                 <p>1</p>
@@ -137,22 +138,23 @@
                         </ul>
                     </div>
                     <div class="flex justify-between items-center mt-4">
-                        <span class="text-2xl font-semibold text-gray-900 tracking-tight">$500,000</span>
-                        <a href="anuncios.html" class="text-blue-700 hover:underline">Ver más</a>
+                        <span class="text-2xl font-semibold text-orange-400 tracking-tight">$500,000</span>
+                        <a href="anuncios.html" class="text-color-botton hover:underline">Ver más</a>
                     </div>
                 </div>
             </div>    
             
             <!-- Anuncio 2 -->
-            <div class="bg-white border border-gray-200 rounded-lg w-80">
+            <div class="bg-white border border-gray-200 rounded-lg w-80 dark:bg-gray-800 dark:border-gray-700">
                 <a href="anuncios.html">
                     <img src="img/anuncio2.jpg" alt="Anuncio 2" class="w-full h-48 object-cover rounded-t-lg">
                 </a>
                 <div class="p-5">
-                    <h3 class="text-2xl mb-2 font-semibold text-gray-900 tracking-tight">Casa en la montaña</h3>
-                    <p class="text-gray-500 mb-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque laborum minima nam, ipsum nesciunt culpa temporibus reprehenderit iure aliquam magnam!</p>
+                    <h3 class="text-2xl mb-2 font-semibold text-gray-900 tracking-tight dark:text-white">Casa en la montaña</h3>
+                    <p class="text-gray-900 mb-3 dark:dark:text-white opacity-65">Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque laborum minima nam, ipsum nesciunt culpa temporibus reprehenderit iure aliquam magnam!</p>
+                    <!-- iconos casa -->
                     <div class="flex justify-center items-center">
-                        <ul class="flex flex-row items-center space-x-8">
+                        <ul class="flex flex-row items-center space-x-8 dark:text-white">
                                 <li class="flex items-center space-x-1 flex-1">
                                 <i class="bi bi-car-front-fill"></i>
                                 <p>2</p>
@@ -168,22 +170,23 @@
                         </ul>
                     </div>
                     <div class="flex justify-between items-center mt-4">
-                        <span class="text-2xl font-semibold text-gray-900 tracking-tight">$300,000</span>
-                        <a href="anuncios.html" class="text-blue-700 hover:underline">Ver más</a>
+                        <span class="text-2xl font-semibold text-orange-400 tracking-tight">$300,000</span>
+                        <a href="anuncios.html" class="text-color-botton hover:underline">Ver más</a>
                     </div>
                 </div>
             </div>
 
             <!-- Anuncio 3 -->
-            <div class="bg-white border border-gray-200 rounded-lg w-80">
+            <div class="bg-white border border-gray-200 rounded-lg w-80 dark:bg-gray-800 dark:border-gray-700">
                 <a href="anunciosh.html">
                     <img src="img/anuncio3.jpg" alt="Anuncio 3" class="w-full h-48 object-cover rounded-t-lg">
                 </a>
                 <div class="p-5">
-                    <h3 class="text-2xl mb-2 font-semibold text-gray-900 tracking-tight">Casa en la ciudad</h3>
-                    <p class="text-gray-500 mb-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque laborum minima nam, ipsum nesciunt culpa temporibus reprehenderit iure aliquam magnam!</p>
+                    <h3 class="text-2xl mb-2 font-semibold text-gray-900 tracking-tight dark:text-white">Casa en la ciudad</h3>
+                    <p class="text-gray-900 mb-3 dark:dark:text-white opacity-65">Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque laborum minima nam, ipsum nesciunt culpa temporibus reprehenderit iure aliquam magnam!</p>
+                    <!-- iconos casa -->
                     <div class="flex justify-center items-center">
-                        <ul class="flex flex-row items-center space-x-8">
+                        <ul class="flex flex-row items-center space-x-8 dark:text-white">
                                 <li class="flex items-center space-x-1 flex-1">
                                 <i class="bi bi-car-front-fill"></i>
                                 <p>2</p>
@@ -199,22 +202,23 @@
                         </ul>
                     </div>
                     <div class="flex justify-between items-center mt-4">
-                        <span class="text-2xl font-semibold text-gray-900 tracking-tight">$200,000</span>
-                        <a href="anuncios.html" class="text-blue-700 hover:underline">Ver más</a>
+                        <span class="text-2xl font-semibold text-orange-400 tracking-tight">$200,000</span>
+                        <a href="anuncios.html" class="text-color-botton hover:underline">Ver más</a>
                     </div>
                 </div>
             </div>
             
             <!-- Anuncio 4 -->
-            <div class="bg-white border border-gray-200 rounded-lg w-80">
+            <div class="bg-white border border-gray-200 rounded-lg w-80 dark:bg-gray-800 dark:border-gray-700">
                 <a href="anuncios.html">
                     <img src="img/anuncio4.jpg" alt="Anuncio 4" class="w-full h-48 object-cover rounded-t-lg">
                 </a>
                 <div class="p-5">
-                    <h3 class="text-2xl mb-2 font-semibold text-gray-900 tracking-tight">Casa en el campo</h3>
-                    <p class="text-gray-500 mb-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque laborum minima nam, ipsum nesciunt culpa temporibus reprehenderit iure aliquam magnam!</p>
+                    <h3 class="text-2xl mb-2 font-semibold text-gray-900 tracking-tight dark:text-white">Casa en el campo</h3>
+                    <p class="text-gray-900 mb-3 dark:dark:text-white opacity-65">Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque laborum minima nam, ipsum nesciunt culpa temporibus reprehenderit iure aliquam magnam!</p>
+                    <!-- iconos casa -->
                     <div class="flex justify-center items-center">
-                        <ul class="flex flex-row items-center space-x-8">
+                        <ul class="flex flex-row items-center space-x-8 dark:text-white">
                                 <li class="flex items-center space-x-1 flex-1">
                                 <i class="bi bi-car-front-fill"></i>
                                 <p>3</p>
@@ -230,15 +234,15 @@
                         </ul>
                     </div>
                     <div class="flex justify-between items-center mt-4">
-                        <span class="text-2xl font-semibold text-gray-900 tracking-tight">$100,000</span>
-                        <a href="anuncios.html" class="text-blue-700 hover:underline">Ver más</a>
+                        <span class="text-2xl font-semibold text-orange-400 tracking-tight">$100,000</span>
+                        <a href="anuncios.html" class="text-color-botton hover:underline">Ver más</a>
                     </div>
                 </div>
             </div>
 
             <!-- ver más -->
             <div class="mt-8">
-                <a href="anuncios.html" class="inline-flex items-center justify-center px-5 py-3 text-base font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 dark:focus:ring-blue-900">
+                <a href="anuncios.html" class="inline-flex items-center justify-center px-5 py-3 text-base font-medium text-center text-white bg-color-botton rounded-lg hover:bg-orange-300 focus:ring-4 focus:ring-blue-300 dark:focus:ring-blue-900">
                     <span class="bi bi-arrow-right mr-2"></span> 
                     Ver más   
                 </a>
@@ -251,9 +255,9 @@
         <img src="img/encuentra.jpg" alt="Imagen de fondo" class="w-full h-fit object-cover">
 
         <div class="absolute inset-0 flex flex-col items-center justify-center">
-            <h2 class="text-4xl mt-3 font-extrabold leading-none tracking-tight text-gray-900 md:text-5xl lg:text-6xl dark:text-white">Vende tu casa con nosotros</h2>
-            <p class="mb-12 mt-12 text-lg text-center font-normal text-gray-500 lg:text-xl sm:px-16 xl:px-48 dark:text-gray-400">Llena el formulario de contacto</p>
-            <a href="anuncios.html" class="inline-flex items-center justify-center px-5 py-3 text-base font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 dark:focus:ring-blue-900">
+            <h2 class="text-4xl mt-3 font-extrabold leading-none tracking-tight text-white md:text-5xl lg:text-6xl">Vende tu casa con nosotros</h2>
+            <p class="mb-12 mt-12 text-lg text-center font-normal text-white opacity-65 lg:text-xl sm:px-16 xl:px-48">Llena el formulario de contacto</p>
+            <a href="anuncios.html" class="inline-flex items-center justify-center px-5 py-3 text-base font-medium text-center text-white bg-color-botton rounded-lg hover:bg-orange-300 focus:ring-4">
                 <span class="bi bi-send mr-2"></span> 
                 Contáctanos   
             </a>
@@ -261,12 +265,12 @@
      </section>
 
     <!-- Footer -->
-    <footer class="bg-gray-800 text-white py-6">
+    <footer class="bg-white shadow-2xl dark:bg-gray-800 dark:text-white py-6">
         <div class="container mx-auto px-4">
             <div class="flex flex-col md:flex-row justify-between items-center">
                 <!-- Logo -->
                 <a href="index.html" class="mb-4 md:mb-0">
-                    <img src="img/logo.svg" alt="Logo" class="h-10">
+                    <img id="modeImage" src="img/logo.svg" alt="Logo" class="w-64">
                 </a>
                 <!-- Enlaces -->
                 <ul class="flex flex-col md:flex-row items-center space-y-4 md:space-y-0 md:space-x-8 text-sm font-medium">
@@ -281,11 +285,11 @@
                     </li>
                 </ul>
             </div>
-            <hr class="my-6 border-gray-200 sm:mx-auto dark:border-gray-700 lg:my-8" />
+            <hr class="my-6 border-gray-950 sm:mx-auto dark:border-white lg:my-8" />
             <!-- Copyright -->
             <div class="flex justify-center">
-                <span class="text-sm text-white text-center">
-                    &copy; <span id="currentYear"></span> <a href="index.html" class="hover:underline">Bienes</a>. Todos los derechos reservados
+                <span class="text-sm text-black dark:text-white text-center">
+                    &copy; <span id="actualizar"></span> <a href="index.html" class="hover:underline">Bienes</a>. Todos los derechos reservados
                 </span>
             </div>
         </div>
