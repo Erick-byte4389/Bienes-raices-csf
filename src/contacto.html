@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto</title>
+        <!-- Tailwind CSS -->
+        <link rel="stylesheet" href="output.css">
+        <!-- Bootstrap Icons -->
+        <link rel="stylesheet" href="/node_modules/bootstrap-icons/font/bootstrap-icons.css">
+</head>
+<body class="bg-gray-100 dark:bg-slate-900">
+
+    <!-- Navbar -->
+    <nav class="flex justify-between mx-auto inset-0 p-6 relative shadow bg-white dark:bg-gray-800">
+        <!-- Logo -->
+        <div class="h-16 flex items-center">
+            <a href="index.html">
+                <img id="modeImage" class="w-80 mx-10" src="img/logo.svg" alt="Logo de la página">
+            </a>
+        </div>
+        <!-- Menú -->
+        <div class="h-16 flex items-center">
+            <ul class="flex mx-10 space-x-8 justify-end">
+                <li class="text-black dark:text-white text-2xl">
+                    <a class="hover:underline" href="nosotros.html">Nosotros</a>
+                </li>
+                <li class="text-black dark:text-white text-2xl hover:underline">
+                    <a href="anuncios.html">Anuncios</a>
+                </li>
+                <li class="text-black dark:text-white text-2xl hover:underline">
+                    <a href="contacto.html">Contacto</a>
+                </li>
+                <li>
+                    <button id="darkmode" class="bi bi-moon-fill text-black dark:text-white dark:hover:text-opacity-50 text-2xl hover:text-gray-700"></button>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Imagen con titulo -->
+    <div class="relative pt-8 mx-40">
+        <!-- Imagen de fondo -->
+        <img src="img/destacada.jpg" alt="Imagen de fondo" class="rounded-t-lg h-fit object-cover">
+        <!-- Titulo -->
+        <div class="absolute inset-0 flex flex-row items-center justify-center">
+            <h2 class="text-4xl mt-3 font-extrabold leading-none tracking-tight text-white md:text-5xl lg:text-6xl">Contáctanos</h2>
+        </div>
+    </div>
+    <!-- Formulario -->
+    <div class="bg-white dark:bg-slate-900 dark:border-gray-700 p-8 border border-gray-200 rounded-b-lg mx-40 mb-8">
+        <!-- Subtitulo -->
+        <div class="text-center">
+            <h3 class="text-3xl font-bold text-gray-900 dark:text-white">Llene el formulario de contacto</h3>
+        </div>
+        <!-- Formulario -->
+        <form class="mx-32 mt-8">
+            <!-- Seccion informacion personal -->
+            <div class="my-4">
+                <h2 class="text-2xl font-medium text-gray-900 dark:text-white">Información personal</h2>
+                <hr class="mt-2 border-gray-300 dark:border-white dark:opacity-60">
+            </div>
+
+            <!-- Nombre -->
+            <div class="mb-4">
+                <label for="nombre" class="block text-lg font-medium text-gray-900 dark:text-white mb-2">Nombre completo:</label>
+                <div class="relative">
+                    <div class="absolute inset-y-0 start-0 flex items-center ps-3.5 pointer-events-none">
+                        <i class="bi bi-person-fill text-gray-500 dark:text-white"></i>
+                    </div>
+                <input type="text" id="nombre" autocomplete="on" class="bg-gray-100 border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-gray-500 focus:border-gray-300 block w-full ps-10 p-2.5  dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-gray-500 dark:focus:border-gray-500" placeholder="Nombre completo">
+                </div>
+            </div>
+            
+            <!-- Correo -->
+            <div class="mb-4">
+                <label for="correo" class="block text-lg font-medium text-gray-900 dark:text-white mb-2">Correo electrónico:</label>
+                <div class="relative">
+                    <div class="absolute inset-y-0 start-0 flex items-center ps-3.5 pointer-events-none">
+                        <i class="bi bi-envelope-fill text-gray-500 dark:text-white"></i>
+                    </div>
+                <input type="email" id="correo" autocomplete="on" class="bg-gray-100 border-gray-300  text-gray-900 text-sm rounded-lg focus:ring-gray-500 focus:border-gray-300 block w-full ps-10 p-2.5  dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-gray-500 dark:focus:border-gray-500" placeholder="nombre@correo.com">
+                </div>
+            </div>
+
+            <!-- Telefono -->
+            <div class="mb-4">
+                <label for="telefono" class="block text-lg font-medium text-gray-900 dark:text-white mb-2">Teléfono:</label>
+                <div class="relative">
+                    <div class="absolute inset-y-0 start-0 flex items-center ps-3.5 pointer-events-none">
+                        <i class="bi bi-telephone-fill text-gray-500 dark:text-white"></i>
+                    </div>
+                <input type="tel" id="telefono" autocomplete="on" class="bg-gray-100 border-gray-300  text-gray-900 text-sm rounded-lg focus:ring-gray-500 focus:border-gray-300 block w-full ps-10 p-2.5  dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-gray-500 dark:focus:border-gray-500" placeholder="(55) 1234-5678">
+                </div>
+            </div>
+
+            <!-- Mensaje -->
+            <div class="mb-4">
+                <label for="mensaje" class="block text-lg font-medium text-gray-900 dark:text-white mb-2">Mensaje:</label>
+                <textarea id="mensaje" class="block p-2.5 w-full text-sm text-gray-900 bg-gray-100 rounded-lg border border-gray-300 focus:ring-gray-500 focus:border-gray-300 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-gary-500 dark:focus:border-gray-500" placeholder="Deja un comentario..."></textarea>
+            </div>
+
+            <!-- Seccion sobre la propiedad -->
+            <div class="my-4">
+                <h2 class="text-2xl font-medium text-gray-900 dark:text-white">Información sobre la propiedad</h2>
+                <hr class="mt-2 border-gray-300 dark:border-white dark:opacity-60">
+            </div>
+
+            <!-- Vende o compra -->
+            <div class="mb-4">
+                <label for="compra-venta" class="block mb-2 text-lg font-medium text-gray-900 dark:text-white">¿Vende o Compra?</label>
+                <select id="compra-venta" class="bg-gray-100 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-gray-500 focus:border-gray-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-gray-500 dark:focus:border-gray-500">
+
+                    <option selected>Seleccione una opción</option>
+                    <option>Compra</option>
+                    <option>Venta</option>
+                </select>
+            </div>
+
+            <!-- Precio o presupuesto -->
+            <div class="mb-4">
+                <label for="telefono" class="block text-lg font-medium text-gray-900 dark:text-white mb-2">Precio o presupuesto:</label>
+                <div class="relative">
+                    <div class="absolute inset-y-0 start-0 flex items-center ps-3.5 pointer-events-none">
+                        <i class="bi bi-currency-dollar text-gray-500 dark:text-white"></i>
+                    </div>
+                <input type="number" id="telefono" autocomplete="on" class="bg-gray-100 border-gray-300  text-gray-900 text-sm rounded-lg focus:ring-gray-500 focus:border-gray-300 block w-full ps-10 p-2.5  dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-gray-500 dark:focus:border-gray-500" placeholder="0.00">
+                </div>
+            </div>
+
+            <!-- Como desea ser contactado -->
+            <div class="mb-4">
+                <fieldset>
+                    <legend class="sr-only">contactado</legend>
+
+                    <h3 class="block text-lg font-medium text-gray-900 dark:text-white mb-2">¿Cómo desea ser contactado?</h3>
+
+                    <div class="flex items-center mb-4">
+                        <input id="email-opcion-1" type="radio" name="contactado" value="Email" class="w-4 h-4 border-gray-300 focus:ring-2 focus:ring-color-botton focus:bg-color-botton dark:focus:ring-color-botton dark:focus:bg-color-botton dark:bg-gray-700 dark:border-gray-600" checked>
+                        <label for="email-opcion-1" class="block ms-2 text-sm font-medium text-gray-900 dark:text-gray-300">
+                        Email
+                        </label>
+                    </div>
+                    
+                    <div class="flex items-center mb-4">
+                        <input id="telefono-opcion-2" type="radio" name="contactado" value="Telefono" class="w-4 h-4 border-gray-300 focus:ring-2 focus:ring-color-botton focus:bg-color-botton dark:focus:ring-color-botton dark:focus:bg-color-botton dark:bg-gray-700 dark:border-gray-600">
+                        <label for="telefono-opcion-2" class="block ms-2 text-sm font-medium text-gray-900 dark:text-gray-300">
+                        Teléfono
+                        </label>
+                    </div>
+                </fieldset>
+            </div>
+
+            <!-- Si eligio telefono... -->
+            <h3 class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Si eligió teléfono, elija la fecha y hora</h3>
+            <!-- Fecha -->
+            <div class="mb-4">
+                <div class="relative max-w-sm">
+                    <div class="absolute inset-y-0 start-0 flex items-center ps-3 pointer-events-none">
+                        <i class="bi bi-calendar-event-fill text-gray-500 dark:text-white"></i>
+                    </div>
+                    <input id="datepicker-autohide" datepicker datepicker-autohide type="text" class="bg-gray-100 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-gray-500 focus:border-gray-500 block w-full ps-10 p-2.5  dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-gray-500 dark:focus:border-gray-500" placeholder="Seleciona una fecha">
+                </div>
+            </div>
+            <!-- Hora -->
+            <div class="max-w-[8rem] mb-4">
+                <label for="time" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Selecciona una hora:</label>
+                <div class="relative">
+                    <div class="absolute inset-y-0 end-0 top-0 flex items-center pe-3.5 pointer-events-none">
+                        <i class="bi bi-clock-fill text-gray-500 dark:text-white"></i>
+                    </div>
+                    <input type="time" id="time" class="bg-gray-100 border leading-none border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-gray-500 focus:border-gray-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-gray-500 dark:focus:border-gray-500" min="09:00" max="18:00" value="00:00" required />
+                </div>
+            </div>
+        </form>
+
+        <button class="mx-32 mt-8" type="submit">
+                <a href="contacto.html" class="inline-flex items-center justify-center px-5 py-3 text-base font-medium text-center text-white bg-color-botton rounded-lg hover:bg-orange-400 focus:ring-4 focus:ring-blue-300 dark:focus:ring-blue-900">
+                    <span class="bi bi-send mr-2"></span> 
+                    Enviar formulario 
+                </a>
+        </button>
+    </div>
+            
+    <!-- Footer -->
+    <footer class="bg-white shadow-2xl dark:bg-gray-800 dark:text-white py-6">
+        <div class="container mx-auto px-4">
+            <div class="flex flex-col md:flex-row justify-between items-center">
+                <!-- Logo -->
+                <a href="index.html" class="mb-4 md:mb-0">
+                    <img id="footerModeImage" src="img/logo.svg" alt="Logo" class="w-64">
+                </a>
+                <!-- Enlaces -->
+                <ul class="flex flex-col md:flex-row items-center space-y-4 md:space-y-0 md:space-x-8 text-sm font-medium">
+                    <li>
+                        <a href="nosotros.html" class="hover:underline">Nosotros</a>
+                    </li>
+                    <li>
+                        <a href="anuncios.html" class="hover:underline">Anuncios</a>
+                    </li>
+                    <li>
+                        <a href="contacto.html" class="hover:underline">Contacto</a>
+                    </li>
+                </ul>
+            </div>
+            <hr class="my-6 border-gray-950 sm:mx-auto dark:border-white lg:my-8" />
+            <!-- Copyright -->
+            <div class="flex justify-center">
+                <span class="text-sm text-black dark:text-white text-center">
+                    &copy; <span id="actualizar"></span> <a href="index.html" class="hover:underline">Bienes</a>. Todos los derechos reservados
+                </span>
+            </div>
+        </div>
+    </footer>
+    
+    <!-- Script -->
+    <script src="script.js "></script>
+    <script src="../node_modules/flowbite/dist/flowbite.min.js"></script>
+</body>
+</html>

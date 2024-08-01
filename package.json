@@ -3,6 +3,7 @@
     "tailwindcss": "^3.4.7"
   },
   "dependencies": {
-    "bootstrap-icons": "^1.11.3"
+    "bootstrap-icons": "^1.11.3",
+    "flowbite": "^2.4.1"
   }
 }
